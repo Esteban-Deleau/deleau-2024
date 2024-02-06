@@ -34,4 +34,5 @@ body{
     background-color: colors.$color-background;
     font-family: fonts.$font;
     overflow: hidden !important;
+    touch-action: pinch-zoom;
   }
