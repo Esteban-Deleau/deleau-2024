@@ -1111,5 +1111,5 @@ body {
   min-width: 100%;
   background-color: #191919;
   font-family: "Outfit";
-  touch-action: pinch-zoom;
+  overflow-x: hidden !important;
 }/*# sourceMappingURL=style.css.map */
