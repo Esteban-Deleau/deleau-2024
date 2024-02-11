@@ -2,23 +2,27 @@
 @use '../assets/colors';
 @use '../assets/fonts';
 .main-p{
-    width: 100%;
+    width: 100vw;
+    max-width: 100vw;
+
     height: 100vh;
     background-color: rgb(61, 61, 61);
 }
 
 #main{
     position: relative;
-    width: 100%;
+    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     background-color: colors.$color-background;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 #top{
     position: absolute;
     top: 0%;
-    width: 100%;
+    width: 100vw;
+    max-width: 100vw;
     height: 50vh;
     background-color: colors.$color-text;
     z-index: 9;
@@ -27,7 +31,8 @@
 
 #center{
     position: relative;
-    width: 100%;
+    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     transform-origin: center;
     background-color: colors.$color-background;
@@ -38,7 +43,8 @@
 #bottom{
     position: absolute;
     bottom: 3.5%;
-    width: 100%;
+    width: 100vw;
+    max-width: 100vw;
     height: 50vh;
     background-color: colors.$color-text;
     overflow: hidden;

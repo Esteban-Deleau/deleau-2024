@@ -463,6 +463,7 @@ a.menu-items-active {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   font-family: "Outfit";
@@ -580,176 +581,130 @@ main {
   background-color: transparent;
   color: #E2E2DE;
   z-index: 1 !important;
-  /* overflow: hidden; */
-}
-
-.hero__text {
-  font-size: 30rem;
-  letter-spacing: -10px;
-  margin-top: 150px;
-  text-transform: uppercase;
-  line-height: 1;
-  z-index: 1;
-}
-
-.hero__gallery__info, .extra__info {
-  font-size: 3rem;
-  text-transform: uppercase;
-  color: #E2E2DE;
-  z-index: 100;
-}
-
-.hero {
-  position: relative;
+  overflow: hidden;
+  height: 90vh;
   width: 100%;
-  height: 100%;
+  max-width: 100vw;
+  padding-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.hero__wrapper {
-  width: inherit;
-  height: inherit;
-}
-
-.hero__text {
-  position: fixed;
-  left: 0;
-  top: 0px;
-  padding: 1rem;
-  display: inline-flex;
-  width: -moz-max-content;
-  width: max-content;
-  color: #E2E2DE;
-}
-
-/* Gallery Section */
-.hero__gallery {
-  position: relative;
+.main-title {
   width: 100%;
-  height: 100%;
+  max-width: 100vh !important;
+  height: 20%;
+  font-size: 100px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.hero__gallery__wrapper {
+.main-title h1:last-child {
+  margin-left: 20%;
+}
+
+.main-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  width: inherit;
-  gap: 50rem;
-  padding-top: 55rem;
-  padding-bottom: 2rem;
+  height: 80%;
+  width: 80%;
+  gap: 100px;
 }
 
-.hero__gallery__figure {
-  position: relative;
-  width: 48rem;
-  height: 48rem;
-  z-index: 2;
-  filter: grayscale(1);
-}
-
-.hero__gallery__image {
-  position: absolute;
-  width: 100%;
+.main-img {
+  width: 50%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero__gallery__info {
-  width: 70vw;
-  text-align: left;
-  padding: 0;
-  z-index: 2;
-  font-size: 3vw;
+.main-img img {
+  height: 420px;
+}
+
+.main-txt {
   text-align: justify;
+  font-size: 30px;
 }
 
-.hero__gallery__info__action {
-  margin-top: 2rem;
-  cursor: pointer;
-  color: #E2E2DE;
-  text-shadow: 0 0 20px #f0edba;
-}
-
-.extra {
-  position: fixed;
-  bottom: 30px;
-  left: 0;
-  padding: 2rem;
-  width: 100%;
-  z-index: -1;
-}
-
-.extra__info span {
-  animation: 2s fly infinite ease;
-  position: absolute;
-  z-index: 100;
-}
-@keyframes fly {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .hero__text {
-    font-size: 20rem;
-  }
-  .hero__gallery__wrapper {
-    gap: 30rem;
-  }
-  .hero__gallery__figure {
-    width: 35rem;
-    height: 35rem;
-  }
-}
 @media screen and (max-width: 900px) {
-  .hero__text {
-    font-size: 15rem;
+  main {
+    height: 120vh;
   }
-  .hero__gallery__wrapper {
-    gap: 20rem;
+  .main-title {
+    align-items: center;
   }
-  .hero__gallery__figure {
-    width: 25rem;
-    height: 25rem;
+  .main-title h1:last-child {
+    margin-left: 50px;
   }
-}
-@media screen and (max-width: 900px) {
-  .hero__text {
-    font-size: 15rem;
-  }
-  .hero__gallery__wrapper {
-    gap: 20rem;
-  }
-  .hero__gallery__figure {
-    width: 20rem;
-    height: 20rem;
+  .main-content {
+    flex-direction: column;
   }
 }
-@media screen and (max-width: 500px) {
-  .hero__text {
-    font-size: 15rem;
+@media screen and (max-width: 480px) {
+  .main-title {
+    font-size: 70px;
   }
-  .hero__gallery__wrapper {
-    gap: 20rem;
+  .main-title h1:last-child {
+    margin-left: 20px;
   }
-  .hero__gallery__figure {
-    width: 15rem;
-    height: 15rem;
+  .main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
+    gap: 100px;
   }
-  .hero__gallery__info {
-    margin-top: 400px;
+  .main-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .extra {
-    bottom: 50px;
-    padding: 1rem;
+  .main-img img {
+    height: 350px;
   }
-  .extra span i {
-    font-size: 20px;
+  .main-txt {
+    text-align: justify;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-title {
+    font-size: 70px;
+  }
+  .main-title h1:last-child {
+    margin-left: 20px;
+  }
+  .main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
+    gap: 100px;
+  }
+  .main-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-img img {
+    height: 300px;
+  }
+  .main-txt {
+    text-align: justify;
+    font-size: 30px;
   }
 }
 .vide {
@@ -824,23 +779,26 @@ main {
   }
 }
 .main-p {
-  width: 100%;
+  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
   background-color: rgb(61, 61, 61);
 }
 
 #main {
   position: relative;
-  width: 100%;
+  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
   background-color: #191919;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 #top {
   position: absolute;
   top: 0%;
-  width: 100%;
+  width: 100vw;
+  max-width: 100vw;
   height: 50vh;
   background-color: #E2E2DE;
   z-index: 9;
@@ -849,7 +807,8 @@ main {
 
 #center {
   position: relative;
-  width: 100%;
+  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
   transform-origin: center;
   background-color: #191919;
@@ -860,7 +819,8 @@ main {
 #bottom {
   position: absolute;
   bottom: 3.5%;
-  width: 100%;
+  width: 100vw;
+  max-width: 100vw;
   height: 50vh;
   background-color: #E2E2DE;
   overflow: hidden;
@@ -1151,4 +1111,6 @@ body {
   min-width: 100%;
   background-color: #191919;
   font-family: "Outfit";
+  overflow-x: hidden !important;
+  touch-action: pinch-zoom;
 }/*# sourceMappingURL=style.css.map */
