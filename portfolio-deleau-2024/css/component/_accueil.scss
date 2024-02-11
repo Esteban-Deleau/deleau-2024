@@ -27,25 +27,25 @@ main{
     z-index: 100;
 }
 
-html.lenis{
-    height: auto;
-}
+// html.lenis{
+//     height: auto;
+// }
 
-lenis.lenis-smooth{
-    scroll-behavior: initial;
-}
+// lenis.lenis-smooth{
+//     scroll-behavior: initial;
+// }
 
-lenis.lenis-smooth [data-lenis-prevent]{
-    overscroll-behavior: contain;
-}
+// lenis.lenis-smooth [data-lenis-prevent]{
+//     overscroll-behavior: contain;
+// }
 
-lenis.lenis-stopped{
-    overflow: hidden;
-}
+// lenis.lenis-stopped{
+//     overflow: hidden;
+// }
 
-lenis.lenis-scrolling iframe{
-    pointer-events: none;
-}
+// lenis.lenis-scrolling iframe{
+//     pointer-events: none;
+// }
 
 .hero{
     position: relative;

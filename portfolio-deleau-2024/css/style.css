@@ -599,26 +599,6 @@ main {
   z-index: 100;
 }
 
-html.lenis {
-  height: auto;
-}
-
-lenis.lenis-smooth {
-  scroll-behavior: initial;
-}
-
-lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-lenis.lenis-scrolling iframe {
-  pointer-events: none;
-}
-
 .hero {
   position: relative;
   width: 100%;
@@ -1171,6 +1151,4 @@ body {
   min-width: 100%;
   background-color: #191919;
   font-family: "Outfit";
-  overflow: hidden !important;
-  touch-action: pinch-zoom;
 }/*# sourceMappingURL=style.css.map */

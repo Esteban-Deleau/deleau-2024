@@ -33,6 +33,6 @@ body{
     min-width: 100%;
     background-color: colors.$color-background;
     font-family: fonts.$font;
-    overflow: hidden !important;
-    touch-action: pinch-zoom;
+    // overflow: hidden !important;
+    // touch-action: pinch-zoom;
   }
